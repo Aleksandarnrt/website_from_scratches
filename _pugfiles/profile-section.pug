@@ -1,0 +1,36 @@
+mixin units(title)
+    .skill-unit
+        .skill-label= title
+        .skill-icon&attributes(attributes)
+            span
+            span
+            span
+            span
+            span
+            span
+            span
+            span
+            span
+            span
+
+section#about
+    h3 About Myself
+    div.icon-lockup
+        div.face-img
+        div.pencil
+        div.mouse
+        div.browser
+        div.video
+    p
+        span Aleksandar is specializes in making  
+        | human stuff and codes happen. Also he is hoping and learning and working him self to be the best Front-End web developer in the world ( Yeeeey! ). So if you like my work scroll a little bit and contact me!
+    .skills-lockup
+        +units('Organization')(class="skill-7")
+        +units('Communication')(class="skill-9")
+        +units('Learning')(class="skill-8")
+        +units('Teaching')(class="skill-6")
+        +units('Planing')(class="skill-7")
+        +units('Visual Design')(class="skill-8")
+        +units('UX Design')(class="skill-8")
+        +units('Programming')(class="skill-8")
+        

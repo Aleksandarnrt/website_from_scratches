@@ -1,0 +1,44 @@
+mixin clientsUnit(name, title)
+    .client-unit
+        .client-face
+            img(alt="face")&attributes(attributes)
+            strong.client-name= name
+            em.client-title= title
+        .client-content
+            .client-quote-mark-start 
+
+            p
+                strong Jade is a terse and simple
+                |  templating language with a dasdasdasdasdas
+                |  strong focus on performancesd dasdasdasdasd
+                |  templating language with a dasdasdasdasdas
+                |  strong focus on performancesd dasdasdasdasd
+                |  strong focus on performancesd 
+
+
+mixin logos
+    .client-logo
+    
+
+section#client
+    h3 Clients
+    .client-controls
+        .control-next
+        .control-prev
+    .clients-mobile-nav
+        span
+        span
+        span
+        span
+    .clients-belt
+        +clientsUnit('Aleksandar Picuric','Direction of Design, Quebec')(src="/assets/img/clients/ja.jpg")
+        +clientsUnit('Aleksandra Jakimova','Director of design, Belgrade')(src="/assets/img/clients/aleks.jpg")
+        +clientsUnit('Adam Redžić', 'Director of design, London')(src="/assets/img/clients/adam.jpg")
+        +clientsUnit('Nives Lakic','Director of design, California')(src="/assets/img/clients/nives.jpg")
+    
+    .clients-logos
+        +logos()
+        +logos()
+        +logos()
+        +logos()
+    

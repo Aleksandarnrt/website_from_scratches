@@ -1,0 +1,26 @@
+mixin thumb-unit(title)
+    a.thumb-unit&attributes(attributes)
+        .thumb-overlay
+            strong=title
+
+section#work-section
+    h3#work Work 
+    .work-belt
+        .thumb-wrap
+            .thumb-container
+                +thumb-unit('Typo International')(class="proj-1")(data-folder="proj-1")
+                +thumb-unit('city-in website concept')(class="proj-2")(data-folder="proj-2")
+                +thumb-unit('crispy icons')(class="proj-3")(data-folder="proj-3")
+                +thumb-unit('flat mobile ui/ux design')(class="proj-4")(data-folder="proj-4")
+                +thumb-unit('fresh it up')(class="proj-5")(data-folder="proj-5")
+                +thumb-unit('timeline page')(class="proj-6")(data-folder="proj-6")
+                +thumb-unit('Weather dashboard')(class="proj-7")(data-folder="proj-7")
+                +thumb-unit('Stripes & co')(class="proj-8")(data-folder="proj-8")
+        .work-wrap
+            .work-container
+                .work-return
+                h4.work-title Do work
+                .project-load
+                
+
+    

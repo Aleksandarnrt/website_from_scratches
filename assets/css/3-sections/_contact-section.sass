@@ -1,0 +1,77 @@
+section#contact
+    max-width: 100%
+    overflow: hidden
+    background: 
+        color: #e5eaee
+    padding-bottom: 50px
+    h3
+        @extend %small-bold
+        color: $icon-color
+        text-align: center
+        padding: 70px 0
+        font-size: 16px
+        letter-spacing: 2px
+        
+    .social-links
+        max-width: 700px
+        margin: 0 auto 50px
+        +display(flex)
+        justify-content: space-around
+        +flex-wrap(wrap)
+        opacity: 0
+        transition: all 0.3s ease-in-out
+        transform: translateX(-200px)
+        a
+            display: block
+            background: $icon-color
+            +size(70px)
+            text-align: center
+            line-height: 70px
+            color: white
+            border-radius: 50%
+            font-size: 38px
+            transition: all 0.3s ease-in-out
+            
+            &:hover
+                opacity: 0.5
+                transform: scale(1.2) 
+        
+        &.is-showing
+            opacity: 1
+            transform: translateX(0px)    
+            
+    .bar
+        border: 2px solid $icon-color
+        max-width: 200px
+        
+    .biglink
+        margin: 70px 0
+        display: block
+        text-align: center
+        line-height: 1
+        color: $icon-color
+        font-size: 56px
+        transition: all 0.3s ease-in-out
+        opacity: 0
+        transform: translateX(200px)
+        &:hover
+            opacity: 0.5
+            transform: scale(1.2) 
+        
+        &.is-showing
+            opacity: 1
+            transform: translateX(0px)
+        
+            
+    @media screen and (max-width: 500px) 
+        
+        .biglink
+            font-size: 40px
+            &:hover
+                transform: scale(1)
+                
+            
+        
+            
+            
+                

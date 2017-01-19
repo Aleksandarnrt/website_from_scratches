@@ -1,0 +1,24 @@
+@import "0-tools/bourbon/bourbon";
+@import "0-tools/animation/bounce";
+@import "0-tools/icon-fonts"; 
+@import "0-tools/fonts"; 
+@import "0-tools/spiner";
+
+
+@import "1-base/vars";
+@import "1-base/base";
+@import "1-base/placeholders";
+
+
+
+
+@import "3-sections/header-section.sass";
+@import "3-sections/profile-section.sass";
+@import "3-sections/work-section.sass";
+@import "3-sections/client-section.sass";
+@import "3-sections/contact-section.sass";
+@import "3-sections/contact-form-section.sass";
+@import "3-sections/footer-section.sass";
+
+
+
